@@ -1,0 +1,123 @@
+<header class="nav" id="nav">
+  <a href="#top" class="logo">Noblequest<span> Media</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav class="links" id="links">
+    <a href="#services">Services</a>
+    <a href="#work">Our work</a>
+    <a href="#contact" class="btn small">Get a quote</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="thirds"></div>
+    <div class="hud tl"><span class="dot"></span>REC <b id="timecode">00:00:00</b></div>
+    <div class="hud tr">1080p &nbsp; 50fps</div>
+    <div class="focus" id="focus"></div>
+    <div class="flash" id="flash"></div>
+
+    <div class="hero-text">
+      <h1>Your event, your brand, filmed and streamed properly.</h1>
+      <p>Livestreaming, videography, video editing, photography and graphic design for events, businesses and organisations.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn">Get a quote</a>
+        <a href="#work" class="btn ghost">See our work</a>
+      </div>
+    </div>
+    <p class="hint">Move your cursor to focus. Click to take a shot.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>What we do</h2>
+    <p class="lead">Pick a service to see what is included.</p>
+    <div class="tabs" role="tablist" id="tabs">
+      <button role="tab" class="tab active" data-tab="live" aria-selected="true">Livestreaming</button>
+      <button role="tab" class="tab" data-tab="video" aria-selected="false">Videography</button>
+      <button role="tab" class="tab" data-tab="edit" aria-selected="false">Video editing</button>
+      <button role="tab" class="tab" data-tab="photo" aria-selected="false">Photography</button>
+      <button role="tab" class="tab" data-tab="design" aria-selected="false">Graphics design</button>
+    </div>
+
+    <div class="panel active" id="live" role="tabpanel">
+      <h3>Livestreaming</h3>
+      <p>Take your event to people who cannot be in the room. We handle cameras, audio, switching and streaming to YouTube, Facebook or your own page.</p>
+      <ul><li>Weddings, conferences, church services, graduations</li><li>Multi-camera setups</li><li>Live graphics and name tags</li></ul>
+    </div>
+    <div class="panel" id="video" role="tabpanel">
+      <h3>Videography</h3>
+      <p>Clean, well-lit video for events, adverts, documentaries and corporate profiles.</p>
+      <ul><li>Event coverage and highlights</li><li>Brand and company films</li><li>Interviews and testimonials</li></ul>
+    </div>
+    <div class="panel" id="edit" role="tabpanel">
+      <h3>Video editing</h3>
+      <p>Raw footage turned into a finished video with sound, colour and captions done right.</p>
+      <ul><li>Social media reels and shorts</li><li>Long-form edits and documentaries</li><li>Captions, colour grading and sound clean-up</li></ul>
+    </div>
+    <div class="panel" id="photo" role="tabpanel">
+      <h3>Photography</h3>
+      <p>Sharp, natural photos delivered fast, so you can post while the moment is still fresh.</p>
+      <ul><li>Events and alumni gatherings</li><li>Portraits and team photos</li><li>Product and brand shoots</li></ul>
+    </div>
+    <div class="panel" id="design" role="tabpanel">
+      <h3>Graphics design</h3>
+      <p>Designs that look the same everywhere your brand shows up.</p>
+      <ul><li>Logos and brand kits</li><li>Posters, flyers and banners</li><li>Social media post templates</li></ul>
+    </div>
+  </section>
+
+  <section class="section alt" id="work">
+    <h2>Our work</h2>
+    <p class="lead">Filter by what you need.</p>
+    <div class="filters" id="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="live">Live</button>
+      <button class="chip" data-filter="video">Video</button>
+      <button class="chip" data-filter="photo">Photo</button>
+      <button class="chip" data-filter="design">Design</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card c1" data-cat="live"><span>Alumni weekend livestream</span></article>
+      <article class="card c2" data-cat="video"><span>Hospital documentary</span></article>
+      <article class="card c3" data-cat="photo"><span>Event photography</span></article>
+      <article class="card c4" data-cat="design"><span>Brand kit</span></article>
+      <article class="card c5" data-cat="video"><span>Social media reels</span></article>
+      <article class="card c6" data-cat="photo"><span>Team portraits</span></article>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="contact-wrap">
+      <div>
+        <h2>Tell us about your event</h2>
+        <p class="lead">Send the details and we will reply with a quote within 24 hours.</p>
+      </div>
+      <form id="form" novalidate>
+        <label>Your name
+          <input type="text" id="name" autocomplete="name">
+          <small class="err" id="e-name"></small>
+        </label>
+        <label>Email
+          <input type="email" id="email" autocomplete="email">
+          <small class="err" id="e-email"></small>
+        </label>
+        <label>Service
+          <select id="service">
+            <option value="">Choose a service</option>
+            <option>Livestreaming</option><option>Videography</option><option>Video editing</option><option>Photography</option><option>Graphics design</option>
+          </select>
+          <small class="err" id="e-service"></small>
+        </label>
+        <label>Message
+          <textarea id="msg" rows="4"></textarea>
+          <small class="err" id="e-msg"></small>
+        </label>
+        <button class="btn" type="submit">Send request</button>
+        <p class="ok" id="ok" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Noblequest Media. Livestreaming, video, photography and design.</p>
+</footer>
